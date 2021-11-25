@@ -1,0 +1,11 @@
+<view>
+  <navigator url="/pages/login/login">页面</navigator>
+  <include src="../templates/header" />
+  <text>{{tel}}</text>
+  <text wx:if="{{is_show}}">{{tel}}</text>
+  <view wx:for="{{names}}" wx:for-item='list' wx:for-index="ids">{{list}}-{{ids}}</view>
+  <button type="primary" bindtap="events">{{tel}}</button>
+  <include src="../templates/header" />
+  <button type="default" bindtap="changeImage">选中图片</button>
+  <image src="{{imgUrl}}"></image>
+</view>
